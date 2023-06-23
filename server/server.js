@@ -10,7 +10,7 @@ const bodyParser = require('body-parser')
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
 
-///////////////////
+
 
 let objectURL = {
     ultrakill: [['Home page', 'https://ultrakill.fandom.com/wiki/Home'],['V1', 'https://ultrakill.fandom.com/wiki/V1'],['Minos prime', 'https://ultrakill.fandom.com/wiki/Minos_Prime'], ['Gabriel', 'https://ultrakill.fandom.com/wiki/Gabriel']],
@@ -21,7 +21,7 @@ let objectURL = {
 
 const keyWords = ['ultrakill', 'doom', 'wiki']
 
-///////////////////
+
 
 app.get('/', (req, res) => {
     res.send(`app is running on port ${PORT}!!!`)
